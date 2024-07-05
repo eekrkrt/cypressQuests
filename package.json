@@ -1,5 +1,5 @@
 {
-  "name": "globalmeals",
+  "name": "wildTestAutomation",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
@@ -16,5 +16,9 @@
     "cypress-downloadfile": "^1.2.4",
     "cypress-file-upload": "^5.0.8"
 
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eekrkrt/cypressQuests.git"
   }
 }
