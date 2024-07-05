@@ -1,0 +1,130 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2024-07-05T13:43:16.468Z",
+    "end": "2024-07-05T13:43:16.680Z",
+    "duration": 212,
+    "testsRegistered": 2,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 1,
+    "hasSkipped": true
+  },
+  "results": [
+    {
+      "uuid": "a96ed10d-338b-4a0b-9cb8-193d4716698a",
+      "title": "",
+      "fullFile": "cypress\\e2e\\test\\test3.cy.js",
+      "file": "cypress\\e2e\\test\\test3.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "a9f1d0c4-a471-42ea-a72c-f4cda08fe2c3",
+          "title": "test suit",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "test url",
+              "fullTitle": "test suit test url",
+              "timedOut": null,
+              "duration": 161,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.url().should('include', 'sale');\ncy.url().should('eq', 'https://www.google.com/');",
+              "err": {
+                "message": "CypressError: `cy.visit()` must be called with a `url` or an `options` object containing a `url` as its 1st argument\n\nhttps://on.cypress.io/visit\n\nBecause this error occurred during a `before each` hook we are skipping the remaining tests in the current suite: `test suit`",
+                "estack": "CypressError: `cy.visit()` must be called with a `url` or an `options` object containing a `url` as its 1st argument\n\nhttps://on.cypress.io/visit\n\nBecause this error occurred during a `before each` hook we are skipping the remaining tests in the current suite: `test suit`\n    at Context.visit (http://localhost:62375/__cypress/runner/cypress_runner.js:131130:70)\n    at wrapped (http://localhost:62375/__cypress/runner/cypress_runner.js:137986:43)\nFrom Your Spec Code:\n    at Context.eval (webpack://wildtestautomation/./cypress/e2e/test/test3.cy.js:7:11)",
+                "diff": null
+              },
+              "uuid": "724d3f9f-142a-4341-8391-4d02d7fd911c",
+              "parentUUID": "a9f1d0c4-a471-42ea-a72c-f4cda08fe2c3",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "test title",
+              "fullTitle": "test suit test title",
+              "timedOut": null,
+              "duration": 0,
+              "state": "skipped",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.url().should('include', 'sale');\ncy.title().should('eq', 'erisale');",
+              "err": {},
+              "uuid": "23ed6568-02bd-46b5-afc4-1a5f98f4e96e",
+              "parentUUID": "a9f1d0c4-a471-42ea-a72c-f4cda08fe2c3",
+              "isHook": false,
+              "skipped": true
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "724d3f9f-142a-4341-8391-4d02d7fd911c"
+          ],
+          "pending": [],
+          "skipped": [
+            "23ed6568-02bd-46b5-afc4-1a5f98f4e96e"
+          ],
+          "duration": 161,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress\\reports\\html\\.jsons",
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "charts": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

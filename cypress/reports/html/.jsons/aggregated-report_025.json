@@ -1,0 +1,151 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2024-07-05T13:51:28.826Z",
+    "end": "2024-07-05T13:51:29.076Z",
+    "duration": 250,
+    "testsRegistered": 3,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 2,
+    "hasSkipped": true
+  },
+  "results": [
+    {
+      "uuid": "80d78fd0-3c72-46f1-83f4-e3da29cc6df8",
+      "title": "",
+      "fullFile": "cypress\\e2e\\test\\test2.cy.js",
+      "file": "cypress\\e2e\\test\\test2.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "61292197-2bcb-4be5-96e5-3ae78d33b468",
+          "title": "second test",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "test URL",
+              "fullTitle": "second test test URL",
+              "timedOut": null,
+              "duration": 192,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.url().should('include', 'google');\ncy.url().should('eq', 'https://www.google.com/');",
+              "err": {
+                "message": "CypressError: `cy.visit()` failed trying to load:\n\n/\n\nWe failed looking for this file at the path:\n\n/Users/ekara/Desktop/wildTestAutomation/\n\nThe internal Cypress web server responded with:\n\n  > 404: Not Found\n\nBecause this error occurred during a `before each` hook we are skipping the remaining tests in the current suite: `second test`",
+                "estack": "CypressError: `cy.visit()` failed trying to load:\n\n/\n\nWe failed looking for this file at the path:\n\n/Users/ekara/Desktop/wildTestAutomation/\n\nThe internal Cypress web server responded with:\n\n  > 404: Not Found\n\nBecause this error occurred during a `before each` hook we are skipping the remaining tests in the current suite: `second test`\n    at <unknown> (http://localhost:63606/__cypress/runner/cypress_runner.js:131491:76)\n    at visitFailedByErr (http://localhost:63606/__cypress/runner/cypress_runner.js:130906:12)\n    at <unknown> (http://localhost:63606/__cypress/runner/cypress_runner.js:131474:13)\n    at tryCatcher (http://localhost:63606/__cypress/runner/cypress_runner.js:1807:23)\n    at Promise._settlePromiseFromHandler (http://localhost:63606/__cypress/runner/cypress_runner.js:1519:31)\n    at Promise._settlePromise (http://localhost:63606/__cypress/runner/cypress_runner.js:1576:18)\n    at Promise._settlePromise0 (http://localhost:63606/__cypress/runner/cypress_runner.js:1621:10)\n    at Promise._settlePromises (http://localhost:63606/__cypress/runner/cypress_runner.js:1697:18)\n    at _drainQueueStep (http://localhost:63606/__cypress/runner/cypress_runner.js:2407:12)\n    at _drainQueue (http://localhost:63606/__cypress/runner/cypress_runner.js:2400:9)\n    at Async._drainQueues (http://localhost:63606/__cypress/runner/cypress_runner.js:2416:5)\n    at Async.drainQueues (http://localhost:63606/__cypress/runner/cypress_runner.js:2286:14)\nFrom Your Spec Code:\n    at Context.eval (webpack://wildtestautomation/./cypress/e2e/test/test2.cy.js:5:11)",
+                "diff": null
+              },
+              "uuid": "08a8eca6-f7c6-4c29-a20e-3511b42d379b",
+              "parentUUID": "61292197-2bcb-4be5-96e5-3ae78d33b468",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "test title",
+              "fullTitle": "second test test title",
+              "timedOut": null,
+              "duration": 0,
+              "state": "skipped",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.title().should('include', 'Goog');\ncy.title().should('eq', 'Google');",
+              "err": {},
+              "uuid": "0929e34b-023b-4db1-9541-72ac99b24d5e",
+              "parentUUID": "61292197-2bcb-4be5-96e5-3ae78d33b468",
+              "isHook": false,
+              "skipped": true
+            },
+            {
+              "title": "test accept cookies and search",
+              "fullTitle": "second test test accept cookies and search",
+              "timedOut": null,
+              "duration": 0,
+              "state": "skipped",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('button#L2AGLb div.QS5gu.sy4vM').click();\ncy.get('textarea#APjFqb').should('be.visible');\ncy.get('textarea#APjFqb').type('GALATASARAY{enter}');",
+              "err": {},
+              "uuid": "a4ae64b5-64a9-4ee0-b9eb-0a6e8a74269d",
+              "parentUUID": "61292197-2bcb-4be5-96e5-3ae78d33b468",
+              "isHook": false,
+              "skipped": true
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "08a8eca6-f7c6-4c29-a20e-3511b42d379b"
+          ],
+          "pending": [],
+          "skipped": [
+            "0929e34b-023b-4db1-9541-72ac99b24d5e",
+            "a4ae64b5-64a9-4ee0-b9eb-0a6e8a74269d"
+          ],
+          "duration": 192,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "aggregated-report.html",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress\\reports\\html\\.jsons",
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "charts": true,
+        "reportFilename": "aggregated-report.html",
+        "reportTitle": "Cypress Image Upload Test Report"
+      },
+      "version": "6.2.0"
+    }
+  }
+}

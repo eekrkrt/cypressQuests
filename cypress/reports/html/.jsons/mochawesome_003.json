@@ -1,0 +1,110 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2024-07-05T13:41:57.340Z",
+    "end": "2024-07-05T13:43:00.301Z",
+    "duration": 62961,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "863b81ae-6a7b-43ef-9352-001735e60d82",
+      "title": "",
+      "fullFile": "cypress\\e2e\\test\\matengo1.cy.js",
+      "file": "cypress\\e2e\\test\\matengo1.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "a075b908-361c-41c9-857c-8b8caa08a1c5",
+          "title": "MATENGO automation project",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "add cart",
+              "fullTitle": "MATENGO automation project add cart",
+              "timedOut": null,
+              "duration": 60298,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('https://magento.softwaretestingboard.com/');\ncy.url().should('include', 'magento');\n// ● Cliquer sur \"tops\" et \ncy.get('#ui-id-5 > :nth-child(2)').trigger('mouseover');\ncy.get('#ui-id-17').click();\n//sélectionner le premier produit\ncy.get('img[alt=\"Cassius Sparring Tank\"]').should('be.visible').and('have.attr', 'src').and('include', 'mt12-blue_main_1.jpg');\ncy.get('img[alt=\"Cassius Sparring Tank\"]').click();\n// ● Choisir une taille pour le produit sélectionné\ncy.get('#option-label-size-143-item-170').should('be.visible');\ncy.get('#option-label-size-143-item-170').click();\ncy.get('#option-label-color-93-item-50').click();\ncy.get('#qty').clear().type('12');\ncy.get('#product-addtocart-button').click();\n// Locate the image element using its alt attribute\n// additional verification on the src attribute if needed\n// ● Ajouter le produit au panier\n// cy.get(':nth-child(1) > .product-item-info > .photo > .product-image-container > .product-image-wrapper > .product-image-photo').trigger('mouseover')\n// ● Consulter le panier et modifier la quantité du produit",
+              "err": {
+                "message": "CypressError: Timed out after waiting `60000ms` for your remote page to load.\n\nYour page did not fire its `load` event within `60000ms`.\n\nYou can try increasing the `pageLoadTimeout` value in `cypress.config.js` to wait longer.\n\nBrowsers will not fire the `load` event until all stylesheets and scripts are done downloading.\n\nWhen this `load` event occurs, Cypress will continue running commands.",
+                "estack": "CypressError: Timed out after waiting `60000ms` for your remote page to load.\n\nYour page did not fire its `load` event within `60000ms`.\n\nYou can try increasing the `pageLoadTimeout` value in `cypress.config.js` to wait longer.\n\nBrowsers will not fire the `load` event until all stylesheets and scripts are done downloading.\n\nWhen this `load` event occurs, Cypress will continue running commands.\n    at timedOutWaitingForPageLoad (https://magento.softwaretestingboard.com/__cypress/runner/cypress_runner.js:130539:64)\n    at <unknown> (https://magento.softwaretestingboard.com/__cypress/runner/cypress_runner.js:131524:16)\n    at tryCatcher (https://magento.softwaretestingboard.com/__cypress/runner/cypress_runner.js:1807:23)\n    at <unknown> (https://magento.softwaretestingboard.com/__cypress/runner/cypress_runner.js:4186:41)\n    at tryCatcher (https://magento.softwaretestingboard.com/__cypress/runner/cypress_runner.js:1807:23)\n    at Promise._settlePromiseFromHandler (https://magento.softwaretestingboard.com/__cypress/runner/cypress_runner.js:1519:31)\n    at Promise._settlePromise (https://magento.softwaretestingboard.com/__cypress/runner/cypress_runner.js:1576:18)\n    at Promise._settlePromise0 (https://magento.softwaretestingboard.com/__cypress/runner/cypress_runner.js:1621:10)\n    at Promise._settlePromises (https://magento.softwaretestingboard.com/__cypress/runner/cypress_runner.js:1697:18)\n    at _drainQueueStep (https://magento.softwaretestingboard.com/__cypress/runner/cypress_runner.js:2407:12)\n    at _drainQueue (https://magento.softwaretestingboard.com/__cypress/runner/cypress_runner.js:2400:9)\n    at Async._drainQueues (https://magento.softwaretestingboard.com/__cypress/runner/cypress_runner.js:2416:5)\n    at Async.drainQueues (https://magento.softwaretestingboard.com/__cypress/runner/cypress_runner.js:2286:14)\nFrom Your Spec Code:\n    at Context.eval (webpack://wildtestautomation/./cypress/e2e/test/matengo1.cy.js:55:11)",
+                "diff": null
+              },
+              "uuid": "65fb8984-0a7e-4b43-8971-06261ffeb401",
+              "parentUUID": "a075b908-361c-41c9-857c-8b8caa08a1c5",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "65fb8984-0a7e-4b43-8971-06261ffeb401"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 60298,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress\\reports\\html\\.jsons",
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "charts": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}
